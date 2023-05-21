@@ -232,40 +232,6 @@ export class GuiModel {
             ],
             "pageList": [
                 {
-                    "id": "mainmenu",
-                    "name": "MainMenu",
-                    "elementList": [
-                        {
-                            "type": "button",
-                            "name": "Friends",
-                            "icon": "fa-user",
-                            "color": "blue",
-                            "page": "friendspage",
-                        },
-                        {
-                            "type": "button",
-                            "name": "Location",
-                            "icon": "fa-cubes",
-                            "color": "yellow",
-                            "page": "locationspage",
-                        },
-                        {
-                            "type": "button",
-                            "name": "Activities",
-                            "icon": "fa-chart-network",
-                            "color": "orange",
-                            "page": "activityPage",
-                        },
-                        {
-                            "type": "button",
-                            "name": "Groups",
-                            "icon": "fa-weixin",
-                            "color": "wisteria",
-                            "page": "groupspage",
-                        },
-                    ]
-                },
-                {
                     "id": "groupspage",
                     "elementList": [
                     {
@@ -293,6 +259,40 @@ export class GuiModel {
                     ]
                 },
                 {
+                    "id": "mainmenu",
+                    "name": "MainMenu",
+                    "elementList": [
+                        {
+                            "type": "button",
+                            "name": "Friends",
+                            "icon": "fa-user",
+                            "color": "blue",
+                            "page": "friendspage",
+                        },
+                        {
+                            "type": "button",
+                            "name": "Location",
+                            "icon": "fa-cubes",
+                            "color": "yellow",
+                            "page": "locationspage",
+                        },
+                        {
+                            "type": "button",
+                            "name": "Activities",
+                            "icon": "fa-calendar",
+                            "color": "orange",
+                            "page": "activityPage",
+                        },
+                        {
+                            "type": "button",
+                            "name": "Groups",
+                            "icon": "fa-weixin",
+                            "color": "wisteria",
+                            "page": "groupspage",
+                        },
+                    ]
+                },
+                {
                     "id": "activityPage",
                     "elementList": [
                     {
@@ -309,7 +309,7 @@ export class GuiModel {
                     },
                     {
                         "type": "list",
-                        "icon": "fa-chart-network",
+                        "icon": "fa-calendar",
                         "color": "orange",
                         "search": true,
                         "url": "/activity",
@@ -326,7 +326,7 @@ export class GuiModel {
                         {
                             "type": "button",
                             "name": "EditActivity",
-                            "icon": "fa-chart-network",
+                            "icon": "fa-calendar",
                             "color": "orange",
                             "form": {
                                 "form": "activityform"
@@ -361,7 +361,7 @@ export class GuiModel {
                         },
                         {
                             "type": "list",
-                            "icon": "fa-chart-network",
+                            "icon": "fa-calendar",
                             "color": "orange",
                             "search": true,
                             "url": "/location/:locationKey/activity",
@@ -370,43 +370,7 @@ export class GuiModel {
                             }
                         }
                     ]
-                },
-                {
-                    "id": "friendeditpage",
-                    "elementList": [
-                        {
-                            "type": "backbutton",
-                        },
-                        {
-                            "type": "button",
-                            "name": "EditFriend",
-                            "icon": "fa-user",
-                            "color": "green",
-                            "form": {
-                                "form": "FriendForm"
-                            }
-                        },
-                        {
-                            "type": "newButton",
-                            "name": "AddActivity",
-                            "icon": "fa-chart-network",
-                            "color": "green",
-                            "form": {
-                                "form": "AddActivityForm"
-                            }
-                        },
-                        {
-                            "type": "list",
-                            "icon": "fa-chart-network",
-                            "color": "green",
-                            "search": true,
-                            "url": "/friend/:friendKey/activity",
-                            "form": {
-                                "form": "activityform"
-                            }
-                        }
-                    ]
-                },                 
+                },                
                 {
                     "id": "friendspage",
                     "elementList": [
@@ -432,6 +396,42 @@ export class GuiModel {
                         },
                     ]
                 },
+                {
+                    "id": "friendeditpage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "button",
+                            "name": "EditFriend",
+                            "icon": "fa-user",
+                            "color": "green",
+                            "form": {
+                                "form": "FriendForm"
+                            }
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "AddActivity",
+                            "icon": "fa-calendar",
+                            "color": "green",
+                            "form": {
+                                "form": "AddActivityForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "icon": "fa-calendar",
+                            "color": "green",
+                            "search": true,
+                            "url": "/friend/:friendKey/activity",
+                            "form": {
+                                "form": "activityform"
+                            }
+                        }
+                    ]
+                }, 
                 {
                     "id": "locationspage",
                     "elementList": [
